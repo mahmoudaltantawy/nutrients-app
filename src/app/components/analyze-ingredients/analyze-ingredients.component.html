@@ -1,0 +1,25 @@
+<div class="container">
+  <h2 class="text-center m-4">
+    Nutrition Analysis</h2>
+  <div class="alert alert-success">
+    <p>
+      Enter an ingredient list list for what you are cooking, like "1 cup rice,
+      10 oz chickpeas", etc.
+    </p>
+    <p>
+      <i class="mx-2 pi pi-exclamation-circle text-danger"></i> Enter each
+      ingredient on a new line.
+    </p>
+    <textarea [(ngModel)]="inge"> </textarea>
+    <div class="d-flex justify-content-between">
+      <button
+        *ngIf="inge"
+        class="btn btn-primary"
+        (click)="postNutrationDetails()"
+      >
+        Analyze
+      </button>
+  
+    </div>
+  </div>
+</div>

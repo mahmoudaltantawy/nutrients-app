@@ -1,0 +1,12 @@
+<h2 class="text-center text-danger alert alert-info">
+<i class="pi pi-plus mx-2"></i>
+   {{title}}
+  </h2>
+<div class="centered">
+    <router-outlet></router-outlet>
+    <p-toast position="top-left"></p-toast>
+  </div>
+  <div class="alert loading__spinner" *ngIf="load.isLoading | async">
+    <p-progressSpinner></p-progressSpinner>
+  </div>
+  
